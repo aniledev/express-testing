@@ -11,7 +11,4 @@ app.get("/", (req, res) => {
   res.send("Hello Express!");
 });
 
-// listenon specified sport
-app.listen(8000, () => {
-  console.log("Server started on PORT 8000");
-});
+module.exports = app;
