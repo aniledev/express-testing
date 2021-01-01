@@ -8,7 +8,7 @@ app.use(morgan("dev"));
 
 // setup simple GET request
 app.get("/", (req, res) => {
-  res.send("Hello Express!");
+  res.status(200).send("Hello Express!");
 });
 
 module.exports = app;
