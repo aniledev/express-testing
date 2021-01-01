@@ -10,7 +10,7 @@ const app = require("../app.js");
 // using chai to assert that we expect to get a status code of 200 and a res body of Hello Express
 
 describe("Express App", () => {
-  test("should return a message from GET /", () => {
+  it("should return a message from GET /", () => {
     return supertest(app).get("/").expect(200, "Hello Express!");
   });
 });
